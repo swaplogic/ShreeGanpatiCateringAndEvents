@@ -32,3 +32,10 @@ html,body{overflow-x:hidden;max-width:100%;width:100%}body{background:#f6f1ea}bu
 .footer-admin .settings:hover,.footer-admin .settings:focus-visible{color:var(--wine);background:#fff8f0;border-color:#d4b89b}
 .footer-admin .settings:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 @media(max-width:390px){.footer-admin .settings{font-size:10px;padding:6px 10px}}
+
+/* Temporary admin-only piece controls, sized for narrow mobile screens */
+.admin-piece-control{display:flex;align-items:center;gap:5px;max-width:100%;min-width:0}
+.admin-piece-control .piece-step{width:32px;min-width:32px;height:34px;padding:0;border-radius:9px;flex:none;cursor:pointer}
+.admin-piece-control .piece-input{width:48px;min-width:0;max-width:48px;height:34px;padding:3px 4px;text-align:center;font-size:14px;box-sizing:border-box}
+.sweet,.sweet-head,.edit,.field{min-width:0;max-width:100%}
+@media(max-width:390px){.admin-piece-control{gap:3px}.admin-piece-control .piece-step{width:29px;min-width:29px}.admin-piece-control .piece-input{width:40px}}
